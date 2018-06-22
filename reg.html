@@ -1,7 +1,7 @@
 <html>
 
 	<head>
-		<title>Poll site</title>
+		<title>Ride-my-way</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
 
@@ -14,11 +14,11 @@
 				<input type="text" placeholder="Last Name" name="lastname">  
 				<input type="date" placeholder="Date" name="DOB">
 				<form>
-					<p style = "padding-left: 30px;">Gender:</p>
+					<p class="top-label">Gender:</p>
 					<div>
-						<input type="radio" id="GenderChoice1" name="gender" value="Male"><label for="GenderChoice1">Male</label>
+						<input type="radio" id="GenderChoice1" name="gender" value="Male"><label for="GenderChoice1" style = "color: #FFFFFF;  font: 12px/1 sans-serif;">Male</label>
 
-						<input type="radio" id="GenderChoice2" name="gender" value="Female"><label for="GenderChoice2">Female</label>
+						<input type="radio" id="GenderChoice2" name="gender" value="Female"><label for="GenderChoice2" style = "color: #FFFFFF;  font: 12px/1 sans-serif;">Female</label>
 					</div>
 				</form>
   				<input type="text" placeholder="Region" name="region">  
@@ -28,9 +28,12 @@
 				<input type="password" placeholder="Password" name="pass">  
 				<input type="password" placeholder="Retype password" name="re-pass"></br>
 
-				<a href='login.html' class="forgot"><u><i>Back to Login!</i></u></a></br>
-
+			
 				<input type="submit" value="Register Now"></br>
+
+				<a href='login.html' class="forgot"><strong>Back to Login!</strong></a>
+				</br>
+
 			</div>
 		</form>
 	</body>

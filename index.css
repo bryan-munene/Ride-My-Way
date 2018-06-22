@@ -1,0 +1,98 @@
+html, body {
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.h1 {
+  letter-spacing: -15px;
+  font-family: Chiller;
+  color: white;
+  text-align: center;
+  font-size: 200px;
+  font-weight: 800;
+  line-height: 200px;
+}
+
+button {
+  width:100px;
+  height:35px;
+  display:inline;
+  font-family: Chiller;
+  font-size:16px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:1px 1px 0px #37a69b;
+  padding-top:6px;
+  margin: 29px 0 0 29px;
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  margin-top: 100px;
+  margin-left: -30px;
+  cursor:pointer;
+  border: none;  
+  background-color: #37a69b;
+  background-image: linear-gradient(top,#3db0a6,#3111);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius:15px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #497a78, 0px 10px 5px #999;
+}
+
+.MainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+ /* overflow-x: hidden;*/
+ 
+}
+.h11 {
+  letter-spacing: -8px;
+
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 200px;
+}
+
+.ContentContainer {
+  position: relative;
+  display: block;
+  background-color: white;
+  z-index: 1;
+  background-color: #000000;
+  opacity: 0.5;
+}
+
+.Content {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+
+p {
+  margin: 75px 0;
+  color: #2ab7ec;
+  font-size: 16px; 
+}
+
+.ParallaxContainer {
+  display: flex;
+  
+  position: f;
+  z-index: -1;
+  height: 100vh;
+  justify-content: center;
+  
+  transform: translateZ(-1px) scale(2);
+  
+  background-color: #000000;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');

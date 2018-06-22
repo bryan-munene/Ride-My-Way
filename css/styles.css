@@ -1,7 +1,7 @@
 html { height: 100% }
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
-body { background-image: url("bg.png") }
+body { background-image: url("images/bg.png") }
 .login {
   background: #000000;
   border: 1px solid #42464b;
@@ -108,7 +108,7 @@ input[type="checkbox"]:checked + .toggle
 }
 
 .btn {
-  background-color: #2ab7ec;;
+  background-color: #2ab7ec;
   border: none;
   color: white;
   padding: 12px 16px;

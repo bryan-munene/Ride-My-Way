@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ride-My-Way DashBoard</title>
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  
+  <body>
+
+    <div id = "Header">
+      <div id="logo">
+         <a href="#"></a>
+      </div>
+
+      <div id="account">
+
+        <ul id="nav-ul">
+          <li id="nav-li">
+              <a  id="nav-a">Username</a>
+              <ul id="nav-ul" class="dropdown">
+                  <li id="nav-li"><a  id="nav-a" href="login.html">Log out</a></li>
+                  <li id="nav-li"><a id="nav-a" href="#">Update</a></li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div id="sidebar">
+      <div class = "toggle-btn" onclick="togglesidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Friends</button>
+        <div class="dropdown-content">
+          <a href="#">Manage Friendships</a>
+          <a href="#">Add Friends</a>
+         
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Rides</button>
+        <div class="dropdown-content">
+          <a href="#">View Rides</a>
+          <a href="#">Create Rides</a>
+         
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">History</button>
+        <div class="dropdown-content">
+          <a href="#">History</a>
+         
+        </div>
+      </div>
+       
+    <script type="text/javascript">
+      function togglesidebar(){
+        document.getElementById("sidebar").classList.toggle('active');
+      }
+    </script>
+  
+  </body>
+</html>

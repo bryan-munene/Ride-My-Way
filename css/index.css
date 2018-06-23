@@ -48,7 +48,7 @@ button {
   perspective: 1px;
   transform-style: preserve-3d;
   height: 100vh;
- /* overflow-x: hidden;*/
+ 
  
 }
 .h11 {
@@ -58,7 +58,7 @@ button {
   text-align: center;
   font-size: 80px;
   font-weight: 800;
-  line-height: 200px;
+  line-height: 80px;
 }
 
 .ContentContainer {
@@ -67,7 +67,7 @@ button {
   background-color: white;
   z-index: 1;
   background-color: #000000;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .Content {
@@ -76,10 +76,12 @@ button {
   padding: 75px 0;
 }
 
-p {
+.p1 {
   margin: 75px 0;
   color: #2ab7ec;
-  font-size: 16px; 
+  letter-spacing: -4px;
+  line-height: 80px;
+  font-size: 50px;
 }
 
 .ParallaxContainer {
@@ -96,3 +98,20 @@ p {
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 60px;
+	line-height: 80px;
+	font-weight: bold;
+	color: #0066CC;
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}

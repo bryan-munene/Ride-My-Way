@@ -1,7 +1,11 @@
 html { height: 100% }
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
-body { background-image: url("../images/bg.jpg") }
+body { 
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+}
 .login {
   background: #000000;
   border: 1px solid #42464b;

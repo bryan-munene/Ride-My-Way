@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ride-My-Way -- Friends - Manage</title>
+    <link rel="stylesheet" type="text/css" href="css/template.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  
+   <body>
+    
+    <div id = "Header">
+      <div id="logo">
+         <a href="dashboard.html"></a>
+      </div>
+
+      <div id="account">
+
+        <ul id="nav-ul">
+          <li id="nav-li">
+              <a  id="nav-a">Username</a>
+              <ul id="nav-ul" class="dropdown">
+                  <li id="nav-li"><a  id="nav-a" href="login.html">Log out</a></li>
+                  <li id="nav-li"><a id="nav-a" href="#">Update</a></li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+    <div id="content-main">
+    <div id="sidebar">
+      <div class = "toggle-btn" onclick="togglesidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Friends</button>
+        <div class="dropdown-content">
+          <a href="friends-manage.html">Manage Friendships</a>
+          <a href="friends-add.html">Add Friends</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Rides</button>
+        <div class="dropdown-content">
+          <a href="rides-all.html">View Rides</a>
+          <a href="rides-create.html">Create Rides</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">History</button>
+        <div class="dropdown-content">
+          <a href="history.html">History</a>
+        </div>
+      </div>
+    </div> 
+    <script type="text/javascript">
+      function togglesidebar(){
+        document.getElementById("sidebar").classList.toggle('active');
+      }
+    </script>
+    
+    <div id="content-page">
+      <p class="p">hi</p> 
+    </div>
+    </div>
+    <div class="footer">
+      <p class="copyrt">&copy; Ride-My-Way 2018</p>
+      <p class="shre">Sharing is Carrying!</p>
+    </div>
+
+  </body>
+</html>

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ride-My-Way -- DashBoard</title>
+    <title>Ride-My-Way -- Friends - Manage</title>
     <link rel="stylesheet" type="text/css" href="css/template.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
   </head>
   
-  <body>
+   <body>
     
     <div id = "Header">
       <div id="logo">
@@ -15,19 +15,24 @@
       </div>
 
       <div id="account">
-
-        <ul id="nav-ul">
-          <li id="nav-li">
-              <a  id="nav-a">Username</a>
-              <ul id="nav-ul" class="dropdown">
-                  <li id="nav-li"><a  id="nav-a" href="login.html">Log out</a></li>
-                  <li id="nav-li"><a id="nav-a" href="#">Update</a></li>
-              </ul>
-          </li>
-        </ul>
+    <div class = "toggle-btn1" onclick="toggleaccount()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    <div class="account-links">
+    <div class="dropdown1">
+        <button class="dropbtn1">UserName</button>
+        
+    <div class="dropdown-content1">
+          <a  href="login.html">Log out</a>
+          <a href="#">Update</a>
+        </div>
       </div>
       
-    </div>
+         </div>  
+                  
+      </div>
     <div id="content-main">
     <div id="sidebar">
       <div class = "toggle-btn" onclick="togglesidebar()">

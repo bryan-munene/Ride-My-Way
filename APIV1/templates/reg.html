@@ -1,0 +1,32 @@
+<html>
+
+	<head>
+		<title>Ride-my-way</title>
+		<link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='css/styles.css') }}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<form action="/">
+			<button class="btn"><i class="fa fa-home"></i></button>
+		</form>
+		<form action="" method="POST">
+			<div class="Register">
+				<h1>Let's set up your account!</h1>
+				
+				<input type="text" placeholder="Name" name="name">  
+				<input type="text" placeholder="E-mail" name="email">  
+				<input type="text" placeholder="User name" name="user">  
+				<input type="password" placeholder="Password" name="pass">  
+				<input type="password" placeholder="Retype password" name="re-pass"></br>
+
+				<input type="submit" value="Register Now"></br>
+
+				<a href="{{ url_for('home') }}" class="forgot"><strong>Back to Login!</strong></a>
+				</br>
+
+			</div>
+		</form>
+	</body>
+
+</html>

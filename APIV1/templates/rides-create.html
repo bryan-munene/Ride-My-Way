@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ride-My-Way -- Rides - All</title>
-    <link rel="stylesheet" type="text/css" href="css/template.css">
+    <title>Ride-My-Way -- Rides - Create</title>
+     <link rel="stylesheet" type="text/css" href="css/template.css">
+  <link rel="stylesheet" type="text/css" href="css/rides-create.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
   </head>
@@ -14,20 +15,25 @@
          <a href="dashboard.html"></a>
       </div>
 
-      <div id="account">
-
-        <ul id="nav-ul">
-          <li id="nav-li">
-              <a  id="nav-a">Username</a>
-              <ul id="nav-ul" class="dropdown">
-                  <li id="nav-li"><a  id="nav-a" href="login.html">Log out</a></li>
-                  <li id="nav-li"><a id="nav-a" href="#">Update</a></li>
-              </ul>
-          </li>
-        </ul>
+     <div id="account">
+    <div class = "toggle-btn1" onclick="toggleaccount()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    <div class="account-links">
+    <div class="dropdown1">
+        <button class="dropbtn1">UserName</button>
+        
+    <div class="dropdown-content1">
+          <a  href="login.html">Log out</a>
+          <a href="#">Update</a>
+        </div>
       </div>
       
-    </div>
+         </div>  
+                  
+      </div>
     <div id="content-main">
     <div id="sidebar">
       <div class = "toggle-btn" onclick="togglesidebar()">
@@ -62,8 +68,20 @@
       }
     </script>
     
-    <div id="content-page">
-      <p class="p">hi</p> 
+     <div id="content-page">
+        <form action="/ridescreate" method="POST">
+      <div class="create">  
+          <h1>Create a ride!</h1>
+        <input type="text" placeholder="Staring Point" name="starting">  
+        <input type="text" placeholder="Destination" name="destination">  
+        <input type="text" placeholder="Leaving Time" name="departure">  
+        <input type="text" placeholder="Carrying Capacity" name="capacity">  
+        
+        <input type="submit" value="Create Ride"></br>
+
+        </br> 
+      </div>
+    </form>
     </div>
     </div>
     <div class="footer">

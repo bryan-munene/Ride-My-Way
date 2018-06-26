@@ -2,115 +2,16 @@
 	margin: 0px;
 	padding: 0px;
 	font-family: sans-serif;
-	transition: 0.5s;
+  transition: 0.5s;
 }
 
 body{
 	background: url(../images/bg.jpg);
-	background-size:     cover;
-	background-repeat:   no-repeat;
 }
-
-#account{
-	position: absolute;
-	width: 220px;
-	height: 85px;
-	background: #151719;
-	right: -220px;
-	
-		
-}
- }
-
-#account.active{
-	right: 0px;
-}
-
-#account .toggle-btn1{
-	position: absolute;
-	right: 235px;
-	
-}
-
-#account .toggle-btn1 span{
-	display: block;
-	width: 70px;
-	height: 15px;
-	background-color: #2ab7ec;
-	margin: 10px 4px;
-}
-
-#account .toggle-btn1 span:hover {
-    background-color: RoyalBlue;
-    cursor: pointer;
-}
-
-
-.dropbtn1 {
-	color: rgba(230,230,230,0.9);
-	list-style: none;
-	padding: 16px 12px;
-	border-bottom: 1px solid rgba(100,100,100,0.3);
-    font-size: 16px;
-    cursor: pointer;
-    width: 220px;
-}
-
-.dropdown1 button{
-	width: 220px;
-    background-color: #151719;
-    color: rgba(230,230,230,0.9);
-    border-bottom: 1px solid rgba(100,100,100,0.3);
-    align-self: center;
-    font-family: arial;
-    font-size: 16px;
-}
-.dropdown1 {
-    position: relative;
-    display: inline-block;
-    width: 220px;
-    background-color: #151719;
-    color: rgba(230,230,230,0.9);
-}
-
-.dropdown-content1 {
-    display: none;
-    position: absolute;
-    background-color: #B8B8B8;
-    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-    z-index: 1;
-    width: 220px;
- 
-}
-
-.dropdown-content1 a {
-	text-decoration: none;
-	display: block;
-	color: #666666;
-	list-style: inside;
-	padding: 16px 12px;
-	border-bottom: 1px solid rgba(100,100,100,0.3);
-	width: auto;
-}
-
-.dropdown-content1 a:hover {
-	background-color: #f1f1f1;
-	color: black;
-}
-
-.dropdown1:hover .dropdown-content1 {
-    display: block;
-}
-
-.dropdown1:hover .dropbtn1 {
-    background-color: #2ab7ec;
-}
-
-
 #sidebar{
 	position: fixed;
 	width: 220px;
-	height: 70%;
+	height: 40%;
 	background: #151719;
 	left: -220px;
 	top: 90px;
@@ -130,7 +31,7 @@ body{
 	display: block;
 	width: 30px;
 	height: 5px;
-	background-color: #2ab7ec;
+	background-color: black;
 	margin: 5px 0px;
 }
 
@@ -138,7 +39,6 @@ body{
     background-color: RoyalBlue;
     cursor: pointer;
 }
-
 
 .dropbtn {
 	color: rgba(230,230,230,0.9);
@@ -187,10 +87,7 @@ body{
 	width: auto;
 }
 
-.dropdown-content a:hover {
-	background-color: #f1f1f1;
-	color: black;
-}
+.dropdown-content a:hover {background-color: #f1f1f1}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -199,9 +96,6 @@ body{
 .dropdown:hover .dropbtn {
     background-color: #2ab7ec;
 }
-
-
-
 
 #logo a{
 	position: absolute;
@@ -219,16 +113,82 @@ background: #2ab7ec;
 opacity: 0.2;
 }
 
+#account {
+	position: absolute;
+	top: 0px; /*the distance of the "home" part of the image from the top*/
+	left: 1150px; /*the distance of the "home" part of the image from left*/
+	width: 210px; /*the width of the "home" part of the image*/
+	height: 82px ;/*the height of the "home" part of the image*/
+	display: block;	
+}
+
+#account #nav-ul {
+ 	position: absolute;
+  	top: 0;
+  	width: 100%;
+  	margin: 0;
+  	padding: 0;
+  	list-style: none;
+  	background: #8F8F8F;
+  	font-family: sans-serif;
+  	font-weight: bolder;
+  	text-align: right;
+
+}
+
+#account #nav-ul #nav-li {
+  display: inline-block;
+  position: relative;
+  line-height: 41px;
+  text-align: right;
+}
+#nav-a {
+	color: black;
+	display: block;
+  	padding: 8px 25px;
+    text-decoration: none;
+}
+#account #nav-ul #nav-li {
+  display: block;
+  padding: 8px 25px;
+  color: #333;
+  text-decoration: none;
+}
+
+#account #nav-ul #nav-li #nav-a:hover {
+  color: #fff;
+  background: #939393;
+}
+
+#account #nav-ul #nav-li #nav-ul.dropdown {
+  min-width: 125px;
+  background: #f2f2f2;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+
+#account #nav-ul #nav-li:hover #nav-ul.dropdown {
+  display: block;
+}
+
+#account #nav-ul #nav-li #nav-ul.dropdown #nav-li {
+  display: block;
+}
 
 #content-main {
   top: 80px;
   bottom: 20px;
   padding: 9px;
   overflow-x: hidden;
+  overflow: scroll;
   position: absolute;
   height: 100%;
   width: 100%;
   outline: 1px solid RoyalBlue;
+  background: #2ab7ec;
+  opacity: 0.5;
 }
 
 #content-page{

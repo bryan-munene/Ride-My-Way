@@ -3,7 +3,9 @@
   <head>
     <title>Ride-My-Way -- Friends - Manage</title>
     <link rel="stylesheet" type="text/css" href="css/template.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/tables.css">
+    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
   </head>
   
@@ -15,16 +17,23 @@
       </div>
 
       <div id="account">
-
-        <ul id="nav-ul">
-          <li id="nav-li">
-              <a  id="nav-a">Username</a>
-              <ul id="nav-ul" class="dropdown">
-                  <li id="nav-li"><a  id="nav-a" href="login.html">Log out</a></li>
-                  <li id="nav-li"><a id="nav-a" href="#">Update</a></li>
-              </ul>
-          </li>
-        </ul>
+	  <div class = "toggle-btn1" onclick="toggleaccount()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+	  <div class="account-links">
+		<div class="dropdown1">
+        <button class="dropbtn1">UserName</button>
+        
+		<div class="dropdown-content1">
+          <a  href="login.html">Log out</a>
+          <a href="#">Update</a>
+        </div>
+      </div>
+      
+         </div>  
+                  
       </div>
       
     </div>
@@ -63,8 +72,52 @@
     </script>
     
     <div id="content-page">
-      <p class="p">hi</p> 
-    </div>
+      <h2 align="center" class="style1">Manage Friendships</h2></br></br>
+
+<table width="1084">
+<form class="search">
+  <p><input type="text" name="search" placeholder="Search.."></p>
+</form>
+
+<div>
+  <tr>
+    <th width="55"><div align="center">ID</div></th>
+    <th width="936"><div align="center">Name</div></th>
+    <th width="93"><div align="center">Action</div></th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Patricia Mbela</td>
+    <td><input type="submit" value="DELETE"></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Ann McCreath</td>
+    <td><input type="submit" value="DELETE"></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Khadija Adam</td>
+    <td><input type="submit" value="DELETE"></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Ajuma Nasenyana</td>
+    <td><input type="submit" value="DELETE"></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Muthoni Likimani</td>
+    <td><input type="submit" value="DELETE"></br></td>
+  </tr>
+  <tr>
+    <td height="80">6</td>
+    <td>Marjorie Oludhe MacGoye</td>
+    <td><input type="submit" value="DELETE"></br></td>
+  </tr>
+ </div>
+</table>
+   </div>
     </div>
     <div class="footer">
       <p class="copyrt">&copy; Ride-My-Way 2018</p>

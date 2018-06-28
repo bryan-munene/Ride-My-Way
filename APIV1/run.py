@@ -179,14 +179,14 @@ class Request(object):
         pickup = data['pickup']
 
         request = {
-            "id":len(requests)+1,
+            "request_id":len(requests)+1,
             "ride_id":ride_id,
             "passenger_id":passenger_id,
             "pickup":pickup,
             "status":False
         }
         
-        ride_requests.append(request)
+        requests.append(request)
         return make_response(jsonify({"status":"created","request":request, "requests":requests}),201)
         
 

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ride-My-Way -- History</title>
+    <link rel="stylesheet" type="text/css" href="css/template.css">
+	<link rel="stylesheet" type="text/css" href="css/tables.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+	 <style type="text/css">
+<!--
+.style1 {color: #FFFFFF}
+-->
+    </style>
+	
+  </head>
+  
+   <body>
+    
+    <div id = "Header">
+      <div id="logo">
+         <a href="dashboard.html"></a>
+      </div>
+
+      <div id="account">
+	  
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a  href="login.html">Log out</a>
+		  <a href="#">Update</a>
+		  
+		</div>
+
+
+		<div class = "toggle-btn1" style="font-size:100px;cursor:pointer;color: #2ab7ec;float: right; padding-right: 20px;" onclick="openNav()">
+				<span></span>
+				<span></span>
+				<span></span>
+			  </div>
+
+		<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+		</script> 
+						  
+	   </div>
+      
+    </div>
+    <div id="content-main">
+    <div id="sidebar">
+      <div class = "toggle-btn" onclick="togglesidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Friends</button>
+        <div class="dropdown-content">
+          <a href="friends-manage.html">Manage Friendships</a>
+          <a href="friends-add.html">Add Friends</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Rides</button>
+        <div class="dropdown-content">
+          <a href="rides-all.html">View Rides</a>
+          <a href="rides-create.html">Create Rides</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">History</button>
+        <div class="dropdown-content">
+          <a href="history.html">History</a>
+        </div>
+      </div>
+    </div> 
+    <script type="text/javascript">
+      function togglesidebar(){
+        document.getElementById("sidebar").classList.toggle('active');
+      }
+	  
+	  function toggleaccount(){
+        document.getElementById("account").classList.toggle('active');
+      }
+	  
+    </script>
+    
+        <div id="content-page">
+      <h2 align="center" class="style1">Your Rides History</h2></br></br>
+
+<table width="1084">
+<form class="search">
+  <p><input type="text" name="search" placeholder="Search.."></p>
+</form>
+
+<div>
+  <tr>
+    <th><div align="center">ID</div></th>
+    <th><div align="center">Driver's Name</div></th>
+    <th><div align="center">Depature Time</div></th>
+	<th><div align="center">Destination</div></th>
+    <th><div align="center">Starting Location</div></th>
+	<th><div align="center">Date</div></th>
+    <th><div align="center">Role</div></th>
+    
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Gina Din</td>
+    <td>0800 hrs</td>
+	<td>Nairobi CBD</td>
+    <td>Roysambu</td>
+	<td>August 19th, 2015</td>
+	<td>Passenger</td>
+    
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Ida Betty Odinga</td>
+    <td>0700 hrs</td>
+	<td>Arthi River</td>
+    <td>Machakos</td>
+	<td>June 07th, 2016</td>
+	<td>Passenger</td>
+    
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Kakenya Ntaiya</td>
+    <td>1900 hrs</td>
+	<td>Kitengela</td>
+    <td>Nairobi CBD</td>
+	<td>November 09th, 2016</td>
+	<td>Passenger</td>
+    
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Olive Mugenda</td>
+    <td>1100 hrs</td>
+	<td>Juja</td>
+    <td>Thika</td>
+	<td>May 14th, 2017</td>
+	<td>Passenger</td>
+    
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Leah Marangu</td>
+    <td>1800 hrs</td>
+	<td>Nairobi CBD</td>
+    <td>Juja</td>
+	<td>October 11th, 2017</td>
+	<td>Driver</td>
+   
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Nelius Kariuki</td>
+    <td>1430 hrs</td>
+	<td>Ruiru</td>
+    <td>Roysambu</td>
+	<td>January 19th, 2018</td>
+	<td>Driver</td>
+    
+  </tr>
+ </div>
+</table>
+   </div>
+    </div>
+    <div class="footer">
+      <p class="copyrt">&copy; Ride-My-Way 2018</p>
+      <p class="shre">Sharing is Carrying!</p>
+    </div>
+
+  </body>
+</html>

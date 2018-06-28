@@ -179,7 +179,7 @@ class Request(object):
         pickup = data['pickup']
 
         request = {
-            "id":len(ride_requests)+1,
+            "id":len(requests)+1,
             "ride_id":ride_id,
             "passenger_id":passenger_id,
             "pickup":pickup,

@@ -12,7 +12,7 @@ def client():
 @pytest.fixture
 def sample_ride():
     test_rides = {
-        "driver_id":user_id,
+        "driver_id":1,
         "starting":"Juja",   
         "destination":"Thika",
         "departure":"1:00 pm",

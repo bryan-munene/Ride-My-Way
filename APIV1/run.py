@@ -6,7 +6,7 @@ app = Flask(__name__, template_folder = 'templates')
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+    return ("WELCOME")
 
 
 users = [{
@@ -29,7 +29,7 @@ rides = [{
             "starting": "Juja"
         }]
 
-requests = []
+ride_requests = []
 
 #USER SECTION
 
@@ -153,41 +153,51 @@ class Rides(object):
         
         
         if len(ride) == 0:
-            return 
-            abort(422,"Ride you are looking for does not exist")
+            return abort(422,"Ride you are looking for does not exist")
 
 
         else:
-            return 
-            make_response(jsonify({"status":"ok", "ride":ride}),200)
+            return make_response(jsonify({"status":"ok", "ride":ride}),200)
         
 
 #REQUESTS SECTION
 
-class Request(object):
+class Ride_Request(object):
     @app.route('/rides/<int:ride_id>/requests', methods=['POST'])
     def requests(ride_id): 
-
         if not request.is_json:
             abort(400,"request not json")
+
+        for user in users:
+            user_id= user.get('user_id')
         
-        if not 'passenger_id' in request.get_json():
-            abort(422,"passenger_id missing")
+        
+        if user_id == (0):
+            abort(422,"driver_id does not exist")
+   
+
+
+        for ride in rides:
+            ride_id= ride.get('ride_id')
+        
+        if ride_id == (0):
+            abort(422,"Ride does not exist")
+   
         
         data = request.get_json()
-        passenger_id = data['passenger_id']
+        # passenger_id = data['passenger_id']
         pickup = data['pickup']
 
-        request = {
-            "request_id":len(requests)+1,
+        ride_request = {
+            "request_id":len(ride_requests)+1,
             "ride_id":ride_id,
-            "passenger_id":passenger_id,
+            "passenger_id":user_id,
             "pickup":pickup,
             "status":False
         }
         
-        requests.append(request)
-        return make_response(jsonify({"status":"created","request":request, "requests":requests}),201)
+        ride_requests.append(ride_request)
+        return make_response(jsonify({"status":"created","ride_request":ride_request, "ride_requests":ride_requests}),201)
         
 
 
